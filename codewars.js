@@ -80,3 +80,8 @@ function sumArray(array) {
     }
     return z;
 }
+// В этом простом задании вам дается число, и вы должны сделать 
+// его отрицательным. А может быть, число уже отрицательное?
+function makeNegative(num) {
+    return -Math.abs(num)
+    }
