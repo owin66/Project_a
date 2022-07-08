@@ -62,3 +62,11 @@ function basicOp(operation, value1, value2)
     return value1/value2
    }
 }
+// Суммируйте все числа заданного массива (cq. list), кроме самого высокого и самого низкого элемента (по значению, а не по индексу!).
+// Самый высокий или самый низкий элемент, соответственно, является одним элементом на каждом ребре, даже если их несколько с одинаковым значением.
+// Помните о проверке ввода.
+function sumArray(array) {
+    return Array.isArray(array) && array.length > 1
+      ? array.reduce((s, n) => s + n, 0) - Math.min(...array) - Math.max(...array)
+      : 0
+  }
