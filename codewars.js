@@ -46,3 +46,19 @@ function boolToWord( bool ){
 function rentalCarCost(d) {
     return d * 40 -(d >= 7 ? 50 :(d >=3 ? 20 : 0))
  }
+
+//  Функция должна принимать три аргумента - операция(строка/символ), значение1(число), значение2(число).
+// Функция должна возвращать числовой результат после применения выбранной операции.
+// Примеры(Оператор, значение1, значение2) --> вывод
+function basicOp(operation, value1, value2)
+{
+ if (operation =="+") {
+    return value1+value2
+  } else if (operation =="-"){
+    return value1-value2
+  } else if (operation =="*"){
+    return value1*value2
+}else if (operation =="/"){
+    return value1/value2
+   }
+}
