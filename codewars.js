@@ -101,3 +101,7 @@ function makeNegative(num) {
      function litres(time) {
         return Math.floor(time*0.5)
       }
+//cделайте функцию которая будет превращать числа в бинарные
+      function addBinary(a,b){
+        return (a+b).toString(2)
+      }
