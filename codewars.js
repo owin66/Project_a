@@ -149,3 +149,15 @@ function makeNegative(num) {
     function even_or_odd(number) {
         return number%2 === 0 ? 'Even' : 'Odd'
       }
+
+//       Возвращает массив, где первый элемент — это количество положительных чисел, а второй элемент — 
+//       сумма отрицательных чисел. 0 не является ни положительным, ни отрицательным.
+// Если вход представляет собой пустой массив или имеет значение null, верните пустой массив.
+      function countPositivesSumNegatives(input) {
+        if (!Array.isArray(input) || !input.length) return [];
+        return input.reduce((arr, n) => {
+          if (n > 0) arr[0]++;
+          if (n < 0) arr[1] += n;
+          return arr;
+        }, [0, 0]);
+      }
