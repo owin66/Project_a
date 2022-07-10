@@ -139,9 +139,13 @@ function makeNegative(num) {
     function removeChar(str) {
         return str.slice(1, -1);
       }
-      
+
     //   Просто удалите пробелы из строки, затем верните результирующую строку.
     function noSpace(x){
         return x.split(' ').join('')
         }
-      
+    //   Создайте функцию, которая принимает целое число в качестве аргумента и возвращает «Четное»
+    //    для четных чисел или «Нечетное» для нечетных чисел.
+    function even_or_odd(number) {
+        return number%2 === 0 ? 'Even' : 'Odd'
+      }
