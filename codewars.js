@@ -140,3 +140,8 @@ function makeNegative(num) {
         return str.slice(1, -1);
       }
       
+    //   Просто удалите пробелы из строки, затем верните результирующую строку.
+    function noSpace(x){
+        return x.split(' ').join('')
+        }
+      
