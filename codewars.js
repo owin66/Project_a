@@ -161,7 +161,7 @@ function makeNegative(num) {
           return arr;
         }, [0, 0]);
       }
-2 variant
+// 2 variant
       if (input == null || input.length == 0)
       return [];
     var positive = 0;
@@ -175,3 +175,10 @@ function makeNegative(num) {
     }
     
     return [positive, negative];
+
+    // Напишите функцию, которая принимает целое число nи строку sв качестве параметров 
+    // и возвращает строку, sповторяющуюся ровно столько nраз.
+    
+    function repeatStr (n, s) {
+      return s.repeat(n);
+    }
