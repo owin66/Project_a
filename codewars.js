@@ -182,3 +182,11 @@ function makeNegative(num) {
     function repeatStr (n, s) {
       return s.repeat(n);
     }
+
+//     Вам дан массив целых чисел нечетной длины ,
+//      в котором все они одинаковы, кроме одного единственного числа.
+// Завершите метод, который принимает такой массив и возвращает это 
+// единственное другое число.
+    function stray(numbers) {
+      return numbers.reduce((x, y) => x ^ y);
+    }
