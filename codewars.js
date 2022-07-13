@@ -215,3 +215,9 @@ function makeNegative(num) {
         return GreetingsDB[language] || GreetingsDB[defaultLanguage];
       }
       
+      // Создайте функцию, которая принимает 2 целых числа в виде строки в 
+      // качестве входных данных и выводит сумму (также в виде строки):
+      function sumStr(a,b) {
+        let c = (+a )+ (+b)
+        return String(c)
+      }
