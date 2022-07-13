@@ -221,3 +221,14 @@ function makeNegative(num) {
         let c = (+a )+ (+b)
         return String(c)
       }
+      // Например, если задано неотрицательное целое число, 3верните 
+      // строку с бормотанием: "1 sheep...2 sheep...3 sheep...". Ввод всегда
+      //  будет действительным, т.е. отрицательных целых чисел не будет.
+
+      var countSheep = function (num){
+        let str = "";
+          for(let i = 1; i <= num; i++) {
+            str+= `${i} sheep...`; 
+          }
+          return str;
+        }
