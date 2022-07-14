@@ -246,3 +246,18 @@ function makeNegative(num) {
         function index(array, n){
           return array[n] ** n || -1;
         }
+        // Создайте функцию, которая принимает 2 строковых аргумента и возвращает целое число, 
+        // соответствующее количеству вхождений второго аргумента в первом.
+        // Если вхождений не найдено, должно быть возвращено число 0.
+        function strCount(str, letter){  
+          return str.split(letter).length-1
+        }
+        // Возьмите массив и удалите каждый второй элемент из массива. Всегда сохраняйте 
+        // первый элемент и начинайте удаление со следующего элемента.
+        function removeEveryOther(arr){
+          var newArr=[];
+        for (var i = 0; i < arr.length; i+=2){
+          newArr.push(arr[i]);
+          }
+        return newArr;
+        }
