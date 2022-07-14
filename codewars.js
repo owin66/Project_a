@@ -225,10 +225,15 @@ function makeNegative(num) {
       // строку с бормотанием: "1 sheep...2 sheep...3 sheep...". Ввод всегда
       //  будет действительным, т.е. отрицательных целых чисел не будет.
 
-      var countSheep = function (num){
+      function countSheep(num){
         let str = "";
           for(let i = 1; i <= num; i++) {
             str+= `${i} sheep...`; 
           }
           return str;
         }
+        
+        // Таракан – одно из самых быстрых насекомых. Напишите функцию, которая получает скорость в км/ч и 
+        // возвращает ее в см/с с округлением в меньшую сторону до целого
+        
+        const cockroachSpeed = s => Math.floor(s / 0.036);
