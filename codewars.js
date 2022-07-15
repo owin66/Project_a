@@ -271,3 +271,17 @@ function makeNegative(num) {
         String.prototype.isUpperCase = function() {
           return this.toUpperCase() === this.toString();
         }
+
+//         Напишите функцию, которая принимает список строк в качестве 
+//         аргумента и возвращает отфильтрованный список, содержащий те же элементы, но с удаленными «гусями».
+// Гуси — это любые строки в следующем массиве, который предварительно заполнен в вашем решении:
+        function gooseFilter (birds) {
+          var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+          return gooseFilter.pop(geese);
+          // return an array containing all of the strings in the input array except those that match strings in geese
+        };
+        // 2v
+        function gooseFilter (birds) {
+          var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+          return birds.filter(b => !geese.includes(b));
+        };
