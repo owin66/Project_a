@@ -267,5 +267,7 @@ function makeNegative(num) {
             return index % 2 === 0;
           });
         }
-
-        
+        // Создайте метод, чтобы увидеть, является ли строка ВСЕМИ ЗАГЛАВНЫМИ.
+        String.prototype.isUpperCase = function() {
+          return this.toUpperCase() === this.toString();
+        }
