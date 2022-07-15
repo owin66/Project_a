@@ -285,3 +285,8 @@ function makeNegative(num) {
           var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
           return birds.filter(b => !geese.includes(b));
         };
+
+
+        // Первое столетие охватывает период с 1 года по 100 год включительно , второе столетие — с
+        //  101 года по 200 год включительно и т. д.
+        const century = year => Math.ceil(year/100)
