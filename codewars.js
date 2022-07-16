@@ -300,3 +300,18 @@ function makeNegative(num) {
         function toAlternatingCase(str){
           return str.split('').map((a,b)=>a==a.toUpperCase()?a.toLowerCase():a.toUpperCase()).join('')
         } 
+
+//         Под непоследовательным мы подразумеваем не ровно 1 больше, чем предыдущий элемент массива.
+// Например, если у нас есть массив, [1,2,3,4,6,7,8]то 1тогда 2все последовательные, но 3нет , так что это первое непоследовательное число.46
+// Если весь массив последовательный, верните null2 .
+        function firstNonConsecutive (arr) {
+          var length = arr.length; //get length
+          var val = arr[0]; //base comparison value variable
+          for(var i = 1; i < length; i++) { //comparison
+            if(arr[i] != val + 1) {
+              return arr[i];
+            }
+            val++;
+          }
+          return null; //default return
+        }
