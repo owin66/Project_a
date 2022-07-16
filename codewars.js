@@ -295,3 +295,8 @@ function makeNegative(num) {
         function greet(name){
           return `Hello, ${name} how are you doing today?`;
         }
+
+        // чтобы каждая строчная буква становилась прописной, а каждая прописная буква — строчной.
+        function toAlternatingCase(str){
+          return str.split('').map((a,b)=>a==a.toUpperCase()?a.toLowerCase():a.toUpperCase()).join('')
+        } 
