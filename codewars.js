@@ -315,3 +315,5 @@ function makeNegative(num) {
           }
           return null; //default return
         }
+    //проверка на целое число
+    const isDivideBy = (number, a, b) => number % a === 0 && number % b === 0;
