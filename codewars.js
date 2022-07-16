@@ -290,3 +290,8 @@ function makeNegative(num) {
         // Первое столетие охватывает период с 1 года по 100 год включительно , второе столетие — с
         //  101 года по 200 год включительно и т. д.
         const century = year => Math.ceil(year/100)
+
+        //Оператор приветсвия
+        function greet(name){
+          return `Hello, ${name} how are you doing today?`;
+        }
