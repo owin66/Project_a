@@ -317,3 +317,13 @@ function makeNegative(num) {
         }
     //проверка на целое число
     const isDivideBy = (number, a, b) => number % a === 0 && number % b === 0;
+
+    //cумма квадратов масива
+    function squareSum(numbers){
+      return numbers.reduce((sum,num) => sum + (num * num), 0);
+    }
+    // v2
+    function squareSum(numbers){
+      let a = numbers.map((a,b)=>(a*a))
+      return a.reduce((a,b)=>a+b)
+     }
