@@ -331,3 +331,10 @@ function makeNegative(num) {
     function stringToArray(string){
       return string.split(' ')
       }
+      // Если у одного из цветов четное количество лепестков, а у другого нечетное количество лепестков,
+      //  это означает, что они влюблены.lovefunc(1,4), true
+      function lovefunc(flower1, flower2){
+        let one = flower1%2===0 ? true : false
+        let two = flower2%2===0 ? true : false
+        return one==two ? false:true
+      }
