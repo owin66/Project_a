@@ -338,3 +338,8 @@ function makeNegative(num) {
         let two = flower2%2===0 ? true : false
         return one==two ? false:true
       }
+      // Учитывая непустой массив целых чисел, вернуть результат умножения значений 
+      // вместе по порядку. Пример:
+      function grow(x){
+        return x.reduce((a,b)=>a*b)
+        }
