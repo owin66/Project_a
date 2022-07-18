@@ -327,3 +327,7 @@ function makeNegative(num) {
       let a = numbers.map((a,b)=>(a*a))
       return a.reduce((a,b)=>a+b)
      }
+    //  Напишите функцию, которая разбивает строку и преобразует ее в массив слов.
+    function stringToArray(string){
+      return string.split(' ')
+      }
