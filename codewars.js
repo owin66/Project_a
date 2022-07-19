@@ -351,8 +351,19 @@ function makeNegative(num) {
 function findSmallestInt(args){
   return Math.min(...args)
 }
+
 // Вы пишете код для управления светофорами в вашем городе. Вам нужна функция для обработки каждого изменения
 //  с green, на yellow, на red, а затем greenснова на .
 function updateLight(current) {
   return current === 'yellow' ? 'red' : current === 'green' ? 'yellow' : 'green';
+}
+
+// Напишите программу, которая находит сумму всех чисел от 1 до num. Число всегда будет положительным 
+// целым числом больше 0.
+var summation = function (num) {
+  let num1 = 0
+  for(let i = 0; i <= num; i++){
+    num1 +=i
+ }
+  return num1
 }
