@@ -351,3 +351,8 @@ function makeNegative(num) {
 function findSmallestInt(args){
   return Math.min(...args)
 }
+// Вы пишете код для управления светофорами в вашем городе. Вам нужна функция для обработки каждого изменения
+//  с green, на yellow, на red, а затем greenснова на .
+function updateLight(current) {
+  return current === 'yellow' ? 'red' : current === 'green' ? 'yellow' : 'green';
+}
