@@ -367,3 +367,9 @@ var summation = function (num) {
  }
   return num1
 }
+
+//наименьшее число в масиве, удалить
+function removeSmallest(numbers) {
+  let arr = Math.min(...numbers)
+    return numbers.splice(arr)
+  }
