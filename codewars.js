@@ -343,3 +343,11 @@ function makeNegative(num) {
       function grow(x){
         return x.reduce((a,b)=>a*b)
         }
+
+//         читывая массив целых чисел, 
+//         ваше решение должно найти наименьшее целое число.
+// Например:
+// Учитывая [34, 15, 88, 2], что ваше решение вернется2
+function findSmallestInt(args){
+  return Math.min(...args)
+}
