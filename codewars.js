@@ -373,3 +373,12 @@ function removeSmallest(numbers) {
   let arr = Math.min(...numbers)
     return numbers.splice(arr)
   }
+  // accum("cwAt") -> "C-Ww-Aaa-Tttt"
+  // Параметр accum представляет собой строку, состоящую только из букв из a..zи A..Z.
+
+  const accum = (s) => {
+    return s
+    .toUpperCase()
+    .split('')
+    .map((el,i)=>`${el}${el.repeat(i).toLowerCase()}`).join('-')
+    }
