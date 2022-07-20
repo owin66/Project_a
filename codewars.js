@@ -382,3 +382,7 @@ function removeSmallest(numbers) {
     .split('')
     .map((el,i)=>`${el}${el.repeat(i).toLowerCase()}`).join('-')
     }
+    // v2
+    function accum1(s) {
+      return s.split('').map((c, i) => (c.toUpperCase() + c.toLowerCase().repeat(i))).join('-');
+    }
