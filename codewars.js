@@ -243,7 +243,7 @@ function makeNegative(num) {
         // array = [1, 2, 3, 4] и N = 2, тогда результат будет 3^2 == 9;
         const index = (array, n) => array.length > n ? Math.pow(array[n], n) : -1;
        //или
-        function index(array, n){
+        function index1(array, n){
           return array[n] ** n || -1;
         }
         // Создайте функцию, которая принимает 2 строковых аргумента и возвращает целое число, 
@@ -393,3 +393,8 @@ function removeSmallest(numbers) {
     function paperwork(n, m) {
    return n > 0 && m > 0 ? n * m : 0
 }
+// Учитывая строку цифр, вы должны заменить любую цифру ниже 5 на «0», а любую цифру 5 и выше на «1».
+//  Верните полученную строку.
+function fakeBin(x){
+  return x.toString().split('').map((a,b)=> a >=5 ? 1 : 0).join('')
+  }
