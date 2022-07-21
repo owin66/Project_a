@@ -386,3 +386,10 @@ function removeSmallest(numbers) {
     function accum1(s) {
       return s.split('').map((c, i) => (c.toUpperCase() + c.toLowerCase().repeat(i))).join('-');
     }
+    // ваша задача — посчитать, сколько чистых 
+    // страниц вам нужно. Если n < 0или m < 0вернуться 0.
+    // Пример:
+    n= 5, m=5: 25
+    function paperwork(n, m) {
+   return n > 0 && m > 0 ? n * m : 0
+}
