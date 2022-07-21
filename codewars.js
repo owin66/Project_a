@@ -398,3 +398,10 @@ function removeSmallest(numbers) {
 function fakeBin(x){
   return x.toString().split('').map((a,b)=> a >=5 ? 1 : 0).join('')
   }
+
+//   Пример:
+// Not Jaden-Cased: "How can mirrors be real if our eyes aren't real"
+// Jaden-Cased:     "How Can Mirrors Be Real If Our Eyes Aren't Real"
+  String.prototype.toJadenCase = function () {
+    return this.split(' ').map((a)=>a[0].toUpperCase()+a.slice(1)).join(' ')
+  };
