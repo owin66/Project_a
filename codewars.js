@@ -405,3 +405,8 @@ function fakeBin(x){
   String.prototype.toJadenCase = function () {
     return this.split(' ').map((a)=>a[0].toUpperCase()+a.slice(1)).join(' ')
   };
+  // Возвращаемое значение должно быть строкой и иметь "***"между каждой из ее букв.
+  // Вы не должны удалять или добавлять элементы из/в массив.
+  function twoSort(s) {
+    return s.sort()[0].split('').join('***');
+  }
