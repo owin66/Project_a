@@ -410,3 +410,9 @@ function fakeBin(x){
   function twoSort(s) {
     return s.sort()[0].split('').join('***');
   }
+
+  // Завершите функцию, которая принимает строковый параметр и переворачивает каждое слово в строке. 
+  // Все пробелы в строке должны быть сохранены.
+  function reverseWords(str) {
+    return str.split(' ').map((a)=>a.split('').reverse().join('')).join(' ')
+  }
