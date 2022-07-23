@@ -411,9 +411,16 @@ function fakeBin(x){
     return s.sort()[0].split('').join('***');
   }
 
-  
+
   // Завершите функцию, которая принимает строковый параметр и переворачивает каждое слово в строке. 
   // Все пробелы в строке должны быть сохранены.
   function reverseWords(str) {
     return str.split(' ').map((a)=>a.split('').reverse().join('')).join(' ')
   }
+
+  //Реализуйте функцию unique_in_order, которая принимает в качестве аргумента
+  //  последовательность и возвращает список элементов
+  // uniqueInOrder('AAAABBBCCDAABBB') == ['A', 'B', 'C', 'D', 'A', 'B']
+  var uniqueInOrder=function(iterable){
+    return [...iterable].filter((a, i) => a !== iterable[i-1])
+}
