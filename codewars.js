@@ -424,3 +424,7 @@ function fakeBin(x){
   var uniqueInOrder=function(iterable){
     return [...iterable].filter((a, i) => a !== iterable[i-1])
 }
+//palindrom
+function palindrosm(str){
+  return str === split('').reverse().join('')
+}
