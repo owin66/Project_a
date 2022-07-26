@@ -428,3 +428,8 @@ function fakeBin(x){
 function palindrosm(str){
   return str === split('').reverse().join('')
 }
+
+//Напишите программу, в которой Алекс может ввести (n), сколько раз обруч обойдётся, и она вернёт ему ободряющее сообщение :)
+function hoopCount (n) {
+  return n>=10 ?  "Great, now move on to tricks" : "Keep at it until you get it"
+}
