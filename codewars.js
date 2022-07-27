@@ -433,3 +433,8 @@ function palindrosm(str){
 function hoopCount (n) {
   return n>=10 ?  "Great, now move on to tricks" : "Keep at it until you get it"
 }
+// eсли премия верна, зарплата должна быть умножена на 10. Если премия ложна, толстяк не заработал достаточно денег
+//  и должен получать только заявленную зарплату.
+function bonusTime(salary, bonus) {
+  return bonus == true ? `\u00A3${salary * 10}` : `\u00A3${salary}`
+ }
