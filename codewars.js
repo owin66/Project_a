@@ -446,3 +446,7 @@ function sumMix(x){
 function even_or_odd(number) {
   return number%2 === 0 ? 'Even' : 'Odd'
 }
+//Учитывая массив целых чисел в виде строк и чисел, верните сумму значений массива, как если бы все они были числами.
+function sumMix(x){
+  return x.map((a)=>+a).reduce((a,b)=>a+b)
+  }
