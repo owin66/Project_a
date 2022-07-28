@@ -450,3 +450,7 @@ function even_or_odd(number) {
 function sumMix(x){
   return x.map((a)=>+a).reduce((a,b)=>a+b)
   }
+  //Ваша задача состоит в том, чтобы найти ближайшее квадратное число,ближайшего_квадрата(n), положительного целого числа n.
+  function nearestSq(n){
+    return Math.round(n**0.5)**2
+}
