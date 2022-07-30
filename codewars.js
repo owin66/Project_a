@@ -477,3 +477,8 @@ function isOpposite(s1,s2){
 function position(letter){
   return `Position of alphabet: ${letter.charCodeAt()-96}`
   }
+
+  //Завершите функцию, которая преобразует шестнадцатеричное число (заданное в виде строки) в десятичное число.
+  function hexToDec(hexString){
+    return parseInt(hexString, 16)
+  }
