@@ -455,3 +455,9 @@ function sumMix(x){
   function nearestSq(n){
     return Math.round(n**0.5)**2
 }
+
+//Напишите функцию, вычисляющую расстояние между Point aи Point b.
+// Тесты округляют ответы до 6 знаков после запятой.
+function distanceBetweenPoints(a, b) {
+  return Math.sqrt(Math.pow(a.x - b.x, 2) + Math.pow(a.y - b.y, 2));
+}
