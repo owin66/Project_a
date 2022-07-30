@@ -487,3 +487,7 @@ function position(letter){
   function isDivisible(n, x, y) {
     return n%x===0 && n%y===0 ? true : false
   }
+//спомогательную функцию, чтобы написать строку (содержащую одно слово) с заглавной буквы
+  function capitalizeWord(word) {
+    return word[0].toUpperCase() + word.slice(1)
+  }
