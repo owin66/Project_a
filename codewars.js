@@ -461,3 +461,8 @@ function sumMix(x){
 function distanceBetweenPoints(a, b) {
   return Math.sqrt(Math.pow(a.x - b.x, 2) + Math.pow(a.y - b.y, 2));
 }
+
+//Предоставленный код должен заменить все точки .в указанной строке strтире .-
+var replaceDots = function(str) {
+  return str.split('.').join('-')
+}
