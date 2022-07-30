@@ -473,3 +473,7 @@ function isOpposite(s1,s2){
     .join('') === s2 && s1 !== '';
   
 }
+//Получив букву, верните ее положение в алфавите.
+function position(letter){
+  return `Position of alphabet: ${letter.charCodeAt()-96}`
+  }
