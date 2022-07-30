@@ -482,3 +482,8 @@ function position(letter){
   function hexToDec(hexString){
     return parseInt(hexString, 16)
   }
+
+  //Создайте функцию, которая проверяет, nделится ли число на два числа x AND y 
+  function isDivisible(n, x, y) {
+    return n%x===0 && n%y===0 ? true : false
+  }
