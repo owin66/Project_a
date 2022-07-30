@@ -466,3 +466,10 @@ function distanceBetweenPoints(a, b) {
 var replaceDots = function(str) {
   return str.split('.').join('-')
 }
+//Дайте вам две строки: s1и s2. Если они противоположны, return true; в противном случае возврат false
+function isOpposite(s1,s2){
+  return s1.split('')
+    .map(c => c === c.toUpperCase() ? c.toLowerCase() : c.toUpperCase())
+    .join('') === s2 && s1 !== '';
+  
+}
