@@ -492,4 +492,8 @@ function position(letter){
   function capitalizeWord(word) {
     return word[0].toUpperCase() + word.slice(1)
   }
+
+  function toCsvText(array) {
+    return array.join('\n')
+ }
   
