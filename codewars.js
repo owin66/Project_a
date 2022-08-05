@@ -493,6 +493,7 @@ function position(letter){
     return word[0].toUpperCase() + word.slice(1)
   }
 
+  
   function toCsvText(array) {
     return array.join('\n')
  }
