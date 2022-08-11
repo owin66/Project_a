@@ -503,3 +503,9 @@ function position(letter){
  .sort((a, b) => b.length - a.length)
  .pop()
  .length;
+
+var laLigaGoals = 43
+var championsLeagueGoals = 10
+var copaDelReyGoals = 5
+
+var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals
