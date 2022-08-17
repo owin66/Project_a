@@ -519,6 +519,7 @@ const binaryArrayToNumber = arr => {
   let b = parseInt(a, 2)
   return b
 };
+
 //Изограмма — это слово, в котором нет повторяющихся букв
 function isIsogram (str) {
   return !str || (str.length === new Set(str.toLowerCase()).size);
