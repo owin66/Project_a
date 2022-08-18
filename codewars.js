@@ -520,6 +520,7 @@ const binaryArrayToNumber = arr => {
   return b
 };
 
+
 //Изограмма — это слово, в котором нет повторяющихся букв
 function isIsogram (str) {
   return !str || (str.length === new Set(str.toLowerCase()).size);
