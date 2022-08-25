@@ -570,3 +570,16 @@ for(let i = 0; i < order.length;i+=1){
 }
   return total;
 }
+//фильтр масива чисел
+function filterArray(numbers, value) {
+  const newArray = [];
+  for(let i = 0; numbers.length > i; i++){
+      if (numbers[i]>value){
+          newArray.push(numbers[i])
+      }
+  }
+      console.log(newArray);
+      // [5, 10, 15, 21, 4]
+      return newArray
+  }
+filterArray([1,2,5,10,15,21,4],2);
