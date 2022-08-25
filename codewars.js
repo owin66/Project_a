@@ -531,3 +531,15 @@ function isIsogram (str) {
 function findNextSquare(sq) {
   return Math.sqrt(sq)%1? -1 : Math.pow(Math.sqrt(sq)+1,2);
 }
+
+//Доповни код функції таким чином, що якщо довжина рядка:
+
+//не перевищує maxLength, функція повертає його в початковому вигляді.
+//більша за maxLength, то функція обрізає рядок до maxLength символів і додає в кінець три крапки "...", після чого повертає скорочену версію.
+function formatMessage(message, maxLength) {
+  let result;
+  // Change code below this line
+result = message.length <= maxLength ? message.slice(message.length[0],maxLength) : message.slice(message.length[0],maxLength)+'...'
+  /// Change code above this line
+  return result;
+}
