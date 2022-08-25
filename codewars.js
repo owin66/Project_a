@@ -562,3 +562,11 @@ for (let i = 0; i < fruits.length; i+=1) { // Change this line
   const fruit = fruits[i]; // Change this line
   console.log(fruit);
 }
+//cумма цикла 
+function calculateTotalPrice(order) {
+  let total = 0;
+for(let i = 0; i < order.length;i+=1){
+  total += order[i]
+}
+  return total;
+}
