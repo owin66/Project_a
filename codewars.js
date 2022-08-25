@@ -588,3 +588,24 @@ function checkFruit(fruit) {
   const fruits = ["apple", "plum", "pear", "orange"];
   return fruits.includes(fruit); // Change this line
 }
+//cовпадение в масивах
+function getCommonElements(array1, array2) {
+  let result = [];
+    for (let i = 0; i < array1.length; i++) {
+      if (array2.includes(array1[i])) {
+        result.push(array1[i]);
+      }
+    }
+    return result;
+  }
+  //cумма массива в for of
+  function calculateTotalPrice(order) {
+    let total = 0;
+    // Change code below this line
+    for (const value of order) {
+      total += value;
+    }
+    // Change code above this line
+    return total;
+  }
+  
