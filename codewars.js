@@ -543,3 +543,16 @@ result = message.length <= maxLength ? message.slice(message.length[0],maxLength
   /// Change code above this line
   return result;
 }
+//
+function checkForName(fullName, name) {
+  const result = name.includes(fullName) || name[0].includes(fullName[0])// Change this line
+   return result;
+ }
+ //Напиши функцию makeArray(firstArray, secondArray, maxLength) для создания нового массива со всеми элементами двух
+ // исходных firstArray и secondArray. Параметр maxLength содержит максимально допустимую длину нового массива.
+ function makeArray(firstArray, secondArray, maxLength) {
+  // Change code below this line
+let arr = firstArray.concat(secondArray)
+return arr.slice(0,maxLength)
+  // Change code above this line
+}
