@@ -556,3 +556,9 @@ let arr = firstArray.concat(secondArray)
 return arr.slice(0,maxLength)
   // Change code above this line
 }
+//цікл for
+const fruits = ['apple', 'plum', 'pear', 'orange'];
+for (let i = 0; i < fruits.length; i+=1) { // Change this line
+  const fruit = fruits[i]; // Change this line
+  console.log(fruit);
+}
