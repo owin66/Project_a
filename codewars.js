@@ -583,3 +583,8 @@ function filterArray(numbers, value) {
       return newArray
   }
 filterArray([1,2,5,10,15,21,4],2);
+//проверка на фрукт в масиве
+function checkFruit(fruit) {
+  const fruits = ["apple", "plum", "pear", "orange"];
+  return fruits.includes(fruit); // Change this line
+}
