@@ -599,6 +599,7 @@ function getCommonElements(array1, array2) {
     return result;
   }
   
+  
   //cумма массива в for of
   function calculateTotalPrice(order) {
     let total = 0;
