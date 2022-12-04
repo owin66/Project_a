@@ -645,3 +645,8 @@ return users.filter(el => el.friends.indexOf(friendName) !== -1).map((el)=>el)
 const getActiveUsers = (users) => {
    return users.filter((el)=>el.isActive===true).map(el=>el)
 };
+
+// Дополни функцию getInactiveUsers(users) так, чтобы она возвращала массив неактивных пользователей, значение свойства isActive которых false.
+const getInactiveUsers = (users) => {
+   return users.filter(el=>el.isActive === false).map(el=>el)
+};
