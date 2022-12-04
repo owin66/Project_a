@@ -641,3 +641,7 @@ const getUsersWithFriend = (users, friendName) => {
 return users.filter(el => el.friends.indexOf(friendName) !== -1).map((el)=>el)
 };
   
+// Дополни функцию getActiveUsers(users) так, чтобы она возвращала массив активных пользователей, значение свойства isActive которых true.
+const getActiveUsers = (users) => {
+   return users.filter((el)=>el.isActive===true).map(el=>el)
+};
