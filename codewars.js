@@ -618,4 +618,10 @@ function getCommonElements(array1, array2) {
   return total
 
   };
+
+  const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
+// Change code below this line
+
+const evenNumbers = numbers.filter((el)=>el%2===0);
+const oddNumbers = numbers.filter((el)=>el%2!==0);
   
