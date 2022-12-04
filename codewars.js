@@ -636,4 +636,8 @@ const getUsersWithAge = (users, minAge, maxAge) => {
   users.filter((el,ind,arr) => el.age <= maxAge && el.age >= minAge? name.push(el) : [])
 return name
 };
+
+const getUsersWithFriend = (users, friendName) => {
+return users.filter(el => el.friends.indexOf(friendName) !== -1).map((el)=>el)
+};
   
