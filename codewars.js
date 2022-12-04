@@ -624,4 +624,10 @@ function getCommonElements(array1, array2) {
 
 const evenNumbers = numbers.filter((el)=>el%2===0);
 const oddNumbers = numbers.filter((el)=>el%2!==0);
+
+const getUsersWithEyeColor = (users, color) => {
+ const name = [];
+  users.filter((el,ind,arr) => el.eyeColor===color ? name.push(el) : [])
+return name
+};
   
