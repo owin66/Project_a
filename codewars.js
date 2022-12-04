@@ -610,4 +610,12 @@ function getCommonElements(array1, array2) {
     // Change code above this line
     return total;
   }
+
+  const getUserEmails = users => {
+    const total = []
+    users.map((el)=>
+       total.push(el.email))
+  return total
+
+  };
   
