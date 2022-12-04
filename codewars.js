@@ -679,3 +679,8 @@ const AUTHOR = 'Robert Sheckley';
 
 const bookWithTitle = books.find((el)=>el.title === BOOK_TITLE);
 const bookByAuthor = books.find((el)=>el.author === AUTHOR);
+
+// Дополни функцию getUserWithEmail(users, email) так, чтобы она возвращала объект пользователя, почта которого (свойство email) совпадает со значением параметра email.
+const getUserWithEmail = (users, email) => {
+  return users.find((el)=>el.email===email)
+};
