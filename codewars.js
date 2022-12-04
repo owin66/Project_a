@@ -630,4 +630,10 @@ const getUsersWithEyeColor = (users, color) => {
   users.filter((el,ind,arr) => el.eyeColor===color ? name.push(el) : [])
 return name
 };
+
+const getUsersWithAge = (users, minAge, maxAge) => {
+  const name = [];
+  users.filter((el,ind,arr) => el.age <= maxAge && el.age >= minAge? name.push(el) : [])
+return name
+};
   
