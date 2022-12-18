@@ -707,7 +707,7 @@ const etotalAveragePlaytimePerGame = players.reduce((total, player) => {
   return total + player.playtime/player.gamesPlayed
 },0);
 // Дополни функцию getInactiveUsers(users) так, чтобы она возвращала массив неактивных пользователей, значение свойства isActive которых false.
-const getInactiveUsers = (users) => {
+const getInactiveUserss = (users) => {
    return users.filter(el=>el.isActive === false).map(el=>el)
 };
 
