@@ -689,7 +689,7 @@ const isEveryUserActive = (users) => {
    return users.every(el=>el.isActive === true ? true : false)
 };
 
-
+//com
 const players = [
   { name: "Mango", playtime: 1270, gamesPlayed: 4 },
   { name: "Poly", playtime: 469, gamesPlayed: 2 },
