@@ -724,6 +724,8 @@ function getCommonElements(array1, array2) {
   //com
     //com
     //com
+    //com
+
   
 
 
