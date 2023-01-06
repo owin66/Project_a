@@ -721,11 +721,7 @@ function getCommonElements(array1, array2) {
     }
     return result;
   }
-  //com
-    //com
-    //com
-    //com
-    //com
+  
 
   
 
