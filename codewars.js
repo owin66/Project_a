@@ -711,6 +711,7 @@ const getInactiveUserss = (users) => {
    return users.filter(el=>el.isActive === false).map(el=>el)
 };
 
+
 //cовпадение в масивах
 function getCommonElements(array1, array2) {
   let result = [];
