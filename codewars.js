@@ -712,7 +712,7 @@ const getInactiveUserss = (users) => {
 };
 
 
-//cовпадение в масивах
+//cовпадение в масива
 function getCommonElements(array1, array2) {
   let result = [];
     for (let i = 0; i < array1.length; i++) {
