@@ -511,7 +511,6 @@ var copaDelReyGoals = 5
 var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals
 
 
-
 //binaries
 const binaryArrayToNumber = arr => {
   let a =  arr.join('')
