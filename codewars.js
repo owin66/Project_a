@@ -389,7 +389,7 @@ function removeSmallest(numbers) {
     // ваша задача — посчитать, сколько чистых 
     // страниц вам нужно. Если n < 0или m < 0вернуться 0.
     // Пример:
-    n= 5, m=5: 25
+    n= 5, m= 5 : 25
     function paperwork(n, m) {
    return n > 0 && m > 0 ? n * m : 0
 }
