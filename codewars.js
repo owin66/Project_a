@@ -577,6 +577,7 @@ function filterArray(numbers, value) {
           newArray.push(numbers[i])
       }
   }
+  
       console.log(newArray);
       // [5, 10, 15, 21, 4]
       return newArray
