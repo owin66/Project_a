@@ -393,6 +393,7 @@ const accum = (s) => {
     .join("-");
 };
 // v2
+
 function accum1(s) {
   return s
     .split("")
